@@ -4,9 +4,9 @@ import './App.css';
 
 function App() {
   const [data,setData] = useState({})
-  const [location, setLocation] = useState('')
+  const [location,setLocation] = useState('')
 
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=bbcee01db995d3aea21f15b3fa745616`;
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=bbcee01db995d3aea21f15b3fa745616&units=metric`;
 
   const searchLocation = (event) => {
     if (event.key === 'Enter') {
@@ -32,29 +32,33 @@ function App() {
       <div className="container">
         <div className="top">
           <div className="location">
-            <p>Rome</p>
+            <p>{data.name}</p>
           </div>
           <div className="temp">
-            <h1>20°C</h1>
+            {data.main ? <h1>{data.main.temp.toFixed()}°C</h1> : null}
           </div>
           <div className="description">
-            <p>Clouds</p>
+            {data.weather ? <p>{data.weather[0].main}</p> : null}
           </div>
         </div>
-        <div className="bottom">
-          <div className="feels">
-            <p>25°C</p>
-            <p className="desc">Feels like</p>
+
+        {data.name != undefined &&
+          <div className="bottom">
+            <div className="feels">
+              {data.main ? <p>{data.main.feels_like.toFixed()}°C</p> : null}
+              <p className="desc">Feels like</p>
+            </div>
+            <div className="humidity">
+              {data.main ? <p>{data.main.humidity}%</p> : null}
+              <p className="desc">Humidity</p>
+            </div>
+            <div className="wind">
+              {data.wind ? <p>{data.wind.speed.toFixed()} MPH</p> : null}
+              <p className="desc">Wind Speed</p>
+            </div>
           </div>
-          <div className="humidity">
-            <p>20%</p>
-            <p className="desc">Humidity</p>
-          </div>
-          <div className="wind">
-            <p>10 MPH</p>
-            <p className="desc">Wind Speed</p>
-          </div>
-        </div>
+        }
+
       </div>
     </div>
   );
