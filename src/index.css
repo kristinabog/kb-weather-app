@@ -51,7 +51,7 @@ h1 {
   text-align: center;
   padding: .7rem 1.5rem;
   font-size: 1.2rem;
-  border-radius: 25px;
+  border-radius: 12px;
   border: 1px solid rgba(255,255,255,0.5);
   background: rgba(255,255,255,0.1);
 }
@@ -62,7 +62,7 @@ h1 {
 
 .container {
   max-width: 700px;
-  height: 700px;
+  height: 39rem;
   margin: auto;
   padding: 0 1rem;
   position: relative;
