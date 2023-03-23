@@ -10,22 +10,23 @@ This project is a simple one page weather web app, where you can find the follow
 [Live Website](https://kb-weather-app.surge.sh/)
 
 
-### Languages Used
+## Languages Used
 
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 -   [Javascript](https://en.wikipedia.org/wiki/JavaScript)
 
-### Frameworks, Libraries & Programs Used
+## Frameworks, Libraries & Programs Used
 
  - [React:](https://github.com/facebook/create-react-app) is the used framework for this app.
  - [OpenWeatherMap:](https://openweathermap.org/api) The weather API was used to fetch weather data.
  - [Git:](https://git-scm.com/) was used for version control.
  - [Surge:](https://surge.sh/) used to deploy the project.
 
-### Deployment
+## Deployment
 
 Clone this repo: 
+
 ```
 git clone git@github.com:kristinabog/kb-weather-app.git
 ```
@@ -35,9 +36,32 @@ cd kb-weather-app
 ```
 run npm install
 ```
-### Credit
 
-Inspiration for this app from the following YouTube tutorial: https://www.youtube.com/watch?v=UjeXpct3p7M
+Deployment:
+
+Run the following in the CLI
+```
+npm install --global surge
+```
+```
+npm run build
+```
+```
+cd build
+```
+```
+cp index.html 200.html
+```
+```
+surge
+```
+Type in chosen name for URL and you are done.
+
+
+
+## Credit
+
+Inspiration on code and style for this app from the following YouTube tutorial: https://www.youtube.com/watch?v=UjeXpct3p7M
 
 
 
