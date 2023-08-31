@@ -21,7 +21,6 @@ This project is a simple one page weather web app, where you can find the follow
  - [React:](https://github.com/facebook/create-react-app) is the used framework for this app.
  - [OpenWeatherMap:](https://openweathermap.org/api) The weather API was used to fetch weather data.
  - [Git:](https://git-scm.com/) was used for version control.
- - [Surge:](https://surge.sh/) used to deploy the project.
 
 ## Deployment
 
