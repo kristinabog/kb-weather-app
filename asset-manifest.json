@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/kb-weather-app/static/css/main.20116a73.css",
+    "main.js": "/kb-weather-app/static/js/main.901a2749.js",
+    "static/media/background-img.jpg": "/kb-weather-app/static/media/background-img.f0d5777fb2204ceca8e6.jpg",
+    "index.html": "/kb-weather-app/index.html",
+    "main.20116a73.css.map": "/kb-weather-app/static/css/main.20116a73.css.map",
+    "main.901a2749.js.map": "/kb-weather-app/static/js/main.901a2749.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.20116a73.css",
+    "static/js/main.901a2749.js"
+  ]
+}
