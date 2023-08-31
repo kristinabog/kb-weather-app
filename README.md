@@ -7,7 +7,7 @@ This project is a simple one page weather web app, where you can find the follow
 - Clouds
 - Wind speed
 
-[Live Website](https://kb-weather-app.surge.sh/)
+[Live Website](https://kristinabog.github.io/kb-weather-app/)
 
 
 ## Languages Used
@@ -39,24 +39,9 @@ run npm install
 
 Deployment:
 
-Run the following in the CLI
-```
-npm install --global surge
-```
-```
-npm run build
-```
-```
-cd build
-```
-```
-cp index.html 200.html
-```
-```
-surge
-```
-Type in chosen name for URL and you are done.
+Deployed on github pages
 
+To find the steps see this [YT video](https://www.youtube.com/watch?v=2hM5viLMJpA)
 
 
 ## Credit
